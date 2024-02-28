@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0e1525, #4d79a3);
+    padding: 10px;
+  }
+  
+  .to-do {
+    color: #1e0189;
+    background-color: white;
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+    width: 100%;
+    max-width: 540px;
+    border-radius: 10px
+  }
+  
+  .to-do h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .to-do h2 img {
+    width: 30px;
+    padding-left: 10px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6e5e5ee;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 16px;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    border-radius: 40px;
+    color: #fff;
+    background: #ff5945;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  ul li {
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+    position: relative
+  }
+  
+  ul li::before {
+    content: '';
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('img/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 11px;
+    left: 10px;
+  }
+  
+  ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+  }
+  
+  ul li.checked::before {
+    background-image: url('img/checked.png');
+  }
+  
+  ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    color: #555;
+    border-radius: 50%
+  }
+  
+  ul li span:hover {
+    background-color: #edeef0;
+  }
